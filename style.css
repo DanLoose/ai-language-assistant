@@ -1,0 +1,178 @@
+body{
+  font-weight: 300;
+  margin: 0;
+}
+
+@font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+        format("woff2"),
+      url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+      url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  .main,
+  .main input {
+    font-size: 16px;
+    line-height: 24px;
+    color: #353740;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+  }
+  .main {
+    display: block;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    max-width: 620px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px; */
+  }
+  .main .icon {
+    width: 60px;
+  }
+  .main h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 16px 0 40px;
+  }
+  .main form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+  .main input[type="text"] {
+    padding: 12px 16px;
+    border: 1px solid #10a37f;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    outline-color: #10a37f;
+  }
+  .main ::placeholder {
+    color: #8e8ea0;
+    opacity: 1;
+  }
+  .main input[type="submit"] {
+    padding: 12px 0;
+    color: #fff;
+    background-color: #f5a623;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .main input[type="submit"]:hover {
+    /* background-color: #09775c; */
+    box-shadow: rgb(64, 64, 64) 0px 0px 3px ;
+  }
+
+  .main .result {
+    /* font-weight: bold; */
+    display: none;
+    margin-top: 40px;
+    padding: 12px;
+    width: 100%;
+    background-color: #444444;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  #result-ai{
+    padding-top:9px ;
+  }
+
+  .tooltip{
+    float: right;
+  }
+
+.tooltip-button{  
+  padding: 5px 6px;
+  border-radius: 5px;
+  border: none;
+  background-color: #8c8c8c;
+  cursor: pointer;
+}
+
+
+.assistant-screen{
+  background-color: #10a37f;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  transition: background-color 0.5s ease-in-out 0s;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.assistant-box{
+  padding: 0px 12px;
+  padding-top: 60px;
+  max-width: 620px;
+  margin: auto;
+  text-align: center;
+}
+
+.assistant-inputs{
+  margin: auto;
+}
+
+.container {
+  max-width: 620px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0 12px;
+  color: #785e60;
+  font-size: 1.1rem;
+}
+
+.linha-titulo{
+  color: #433536;
+}
+
+.linha-titulo:after {
+  content: '';
+  display: block;
+  /* margin: 0 auto; */
+  width: 24px;
+  padding-top: 8px;
+  border-bottom: 4px solid #10a37f;
+  opacity: 0.6;
+}
+
+.container li{
+  line-height: 40px;
+}
+
+.lista-funcionalidades {
+  list-style-type: none;
+}
+
+.lista-funcionalidades li::before {
+  color: #10a37f;
+  content: '\2022';
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer{
+  margin-top: 40px;
+  border-top: 2px solid #efefef;
+  text-align: center;
+  padding-top: 30px;
+  color: #785e60;
+  padding-bottom: 20px;
+}

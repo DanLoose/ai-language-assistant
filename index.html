@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143956741004089"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./bot.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tooltip.css">
+    <title>Meu assistente de Línguas</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="assistant-screen">
+            <div class="assistant-box">
+                <img src="/bot.png" class="icon">
+                <div>
+                    <h3>Meu Assistente de Linguas</h3>
+                    <p> Olá, eu sou seu Assistente pessoal de Línguas. Eu estou aqui pra te ajudar.</p>
+                </div>
+                <form class="assistant-inputs">
+                    <input autocomplete="off" type="text" id="text" name="text" placeholder="Escreva seu texto"
+                        value="">
+                    Escreva a língua de saída:
+                    <input type="text" id="lang" name="lang" placeholder="Inglês..." value="Inglês">
+
+                    Escreva o tom desejado:
+                    <input type="text" id="tone" name="tone" placeholder="Amigável..." value="Padrão">
+
+                    <!-- Selecione a temperatura:
+                    <input type="range" id="temperature" name="temperature" min="0.2" max="1.0" step="0.01" value="0.8"> -->
+
+                    <input type="submit" id="submit" value="Transformar">
+                </form>
+
+                <div id="result-box" class="result">
+                    <div class="tooltip">
+                        <button class="tooltip-button" onclick="copiaResposta()" onmouseout="outFunc()">
+                            <span class="tooltiptext" id="myTooltip">Copiar</span>
+                            <i id="copy-icon" class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                    <p id="result-ai"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="linha-titulo">Bem-vindo ao "Meu Assistente de Línguas" - Seu Parceiro para dar um help com
+                Idiomas!</h2>
+            <p>Oi você, pronto para dominar idiomas e se expressar com confiança? Bem-vindo ao "Meu Assistente de
+                Línguas" - o seu companheiro definitivo nessa jornada. Aqui, oferecemos um montão de ferramentas super
+                legais e técnicas espertas para você aprimorar suas habilidades linguísticas. Imagine só: da próxima vez
+                que precisar se expressar com elegância, estaremos aqui para te dar aquela força.</p>
+        </div>
+        <div class="container">
+            <h2 class="linha-titulo">O que é o Meu Assistente de Idiomas?</h2>
+            <p>O Assistente é tipo o seu confidente linguístico. Pode acessar no celular ou no computador, o que for
+                mais tranquilo pra você. Quer seja na escrita, na tradução ou até para dar um up na gramática, essa
+                beleza está sempre pronta para dar aquela mãozinha.</p>
+        </div>
+        <div class="como-utilizar container">
+            <h2 class="linha-titulo">Como utilizar o Assistente?</h2>
+            <ol>
+                <li><strong>Insira</strong> o texto que quer transformar</li>
+                <li><strong>Selecione</strong> qual a língua de destino </li>
+                <li><strong>Selecione</strong> o tom desejado na transformação</li>
+            </ol>
+        </div>
+        <div class="container">
+            <h2 class="linha-titulo">Funcionalidades básicas</h2>
+            <ul class="lista-funcionalidades">
+                <li><strong>Traduzir: </strong>Converta idiomas com precisão, sem complicações.</li>
+                <li><strong>Corrigir: </strong>Aprimore a gramática e mantenha a excelência linguística.</li>
+                <li><strong>Resumir: </strong>Sintetize conteúdo complexo em informações essenciais.</li>
+                <li><strong>Enriquecer: </strong>Transforme palavras simples em prosa envolvente e rica.</li>
+                <li><strong>Tom: </strong> Explore diferentes tons de expressão para comunicar com personalidade.
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p> Feito com &lt;3 por Danilo Loose</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f5419ab9d1.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
