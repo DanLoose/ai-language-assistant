@@ -24,6 +24,7 @@ async function askAi(texto, lingua, tom) {
     const apiKey = "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";
     const messages = generatePrompt(texto, lingua, tom);
 
+    iniciaCarregamento();
     const res = await fetch(
         'https://api.openai.com/v1/chat/completions', {
         method: "POST",
@@ -39,6 +40,8 @@ async function askAi(texto, lingua, tom) {
         }),
     });
     const json = await res.json();
+
+    interrompeCarregamento();
     let response = json.choices[0].message;
     return response.role === 'assistant' ? response.content : null;
 }
@@ -99,3 +102,19 @@ function renderizaSelects() {
 }
 
 renderizaSelects();
+
+
+function iniciaCarregamento() {
+    let deg = 0;
+    const loadIcon = document.getElementById("loading");
+    loadIcon.style.display = "block";
+    setInterval(() => {
+        loadIcon.style.transform = `rotate(${deg++}deg)`;
+    }, 1)
+}
+
+function interrompeCarregamento() {
+    const loadIcon = document.getElementById("loading");
+    loadIcon.style.display = "none";
+    clearInterval()
+}

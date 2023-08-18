@@ -77,6 +77,7 @@ body{
     background-color: #444444;
     border-radius: 8px;
     box-sizing: border-box;
+    text-align: start;
   }
 
   #result-ai{
@@ -168,4 +169,8 @@ footer{
 }
 h2{
   font-size: 1.3rem;
+}
+
+#loading{
+  display: none;
 }
