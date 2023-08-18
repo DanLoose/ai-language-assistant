@@ -67,3 +67,35 @@ function outFunc() {
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Copiar";
 }
+
+function renderizaSelects() {
+    const linguas = [
+        ["english", "Inglês"],
+        ["spanish", "Espanhol"],
+        ["portuguese", "Português"],
+        ["french", "Francês"],
+        ["german", "Alemão"],
+        ["mandarin", "Mandarim"],
+        ["arabic", "Árabe"]
+    ];
+
+    const tonalidade = ["standart"];
+
+    linguas.forEach(lingua => {
+        const opcaoLingua = document.createElement("option");
+        opcaoLingua.value = lingua[0];
+        opcaoLingua.innerText = lingua[1];
+        inputLang.append(opcaoLingua);
+    });
+
+    tonalidade.forEach(tom => {
+        const opcaoTom = document.createElement("option");
+        opcaoTom.value = tom;
+        opcaoTom.innerText = tom.charAt(0).toUpperCase() + tom.slice(1);
+        inputTone.append(opcaoTom);
+    });
+
+
+}
+
+renderizaSelects();

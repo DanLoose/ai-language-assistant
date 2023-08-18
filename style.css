@@ -27,14 +27,6 @@ body{
   }
   .main {
     display: block;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    max-width: 620px;
-    margin: auto;
-    padding-left: 12px;
-    padding-right: 12px; */
   }
   .main .icon {
     width: 60px;
@@ -51,17 +43,15 @@ body{
     flex-direction: column;
     width: 320px;
   }
-  .main input[type="text"] {
+  .main textarea,
+  .main select {
     padding: 12px 16px;
     border: 1px solid #10a37f;
     border-radius: 4px;
     margin-bottom: 24px;
     outline-color: #10a37f;
   }
-  .main ::placeholder {
-    color: #8e8ea0;
-    opacity: 1;
-  }
+
   .main input[type="submit"] {
     padding: 12px 0;
     color: #fff;
@@ -175,4 +165,7 @@ footer{
   padding-top: 30px;
   color: #785e60;
   padding-bottom: 20px;
+}
+h2{
+  font-size: 1.3rem;
 }

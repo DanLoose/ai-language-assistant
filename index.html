@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./bot.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tooltip.css">
+    <link rel="stylesheet" href="./tabs.css">
     <title>Meu assistente de Línguas</title>
 </head>
 
@@ -21,20 +22,41 @@
                     <h3>Meu Assistente de Linguas</h3>
                     <p> Olá, eu sou seu Assistente pessoal de Línguas. Eu estou aqui pra te ajudar.</p>
                 </div>
-                <form class="assistant-inputs">
-                    <input autocomplete="off" type="text" id="text" name="text" placeholder="Escreva seu texto"
-                        value="">
-                    Escreva a língua de saída:
-                    <input type="text" id="lang" name="lang" placeholder="Inglês..." value="Inglês">
 
-                    Escreva o tom desejado:
-                    <input type="text" id="tone" name="tone" placeholder="Amigável..." value="Padrão">
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Traduzir')" id="defaultOpen">Traduzir</button>
+                    <button class="tablinks" onclick="openCity(event, 'Resumir')">Resumir</button>
+                    <button class="tablinks" onclick="openCity(event, 'Enriquecer')">Enriquecer</button>
+                </div>
 
-                    <!-- Selecione a temperatura:
-                    <input type="range" id="temperature" name="temperature" min="0.2" max="1.0" step="0.01" value="0.8"> -->
+                <!-- Tab content -->
+                <div id="Traduzir" class="tabcontent">
+                    <p> Esse é o tradutor, insira qualquer texto que queira traduzir</p>
+                    <form class="assistant-inputs">
+                        <textarea placeholder="Insira seu texto..." cols="50" rows="6" type="text" id="text"
+                            name="text"></textarea>
+                        Selecione a língua de saída:
+                        <select id="lang" name="lang"></select>
 
-                    <input type="submit" id="submit" value="Transformar">
-                </form>
+                        Selecione o tom desejado:
+                        <select id="tone" name="tone"></select>
+
+                        <!-- Selecione a temperatura:
+                        <input type="range" id="temperature" name="temperature" min="0.2" max="1.0" step="0.01" value="0.8"> -->
+
+                        <input type="submit" id="submit" value="Transformar">
+                    </form>
+                </div>
+
+                <div id="Resumir" class="tabcontent">
+                    <p>Em desenvolvimento...</p>
+                </div>
+
+                <div id="Enriquecer" class="tabcontent">
+                    <p>Em desenvolvimento...</p>
+                </div>
+
 
                 <div id="result-box" class="result">
                     <div class="tooltip">
@@ -88,6 +110,7 @@
 
     <script src="https://kit.fontawesome.com/f5419ab9d1.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="./tabs.js"></script>
 </body>
 
 </html>
