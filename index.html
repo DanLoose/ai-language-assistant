@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143956741004089"
@@ -42,19 +42,41 @@
                         Selecione o tom desejado:
                         <select id="tone" name="tone"></select>
 
+
                         <!-- Selecione a temperatura:
-                        <input type="range" id="temperature" name="temperature" min="0.2" max="1.0" step="0.01" value="0.8"> -->
+                        <span style="color: rgb(103, 0, 0);">Temporiariamente desabilitado</span>
+                        <input disabled type="range" id="temperature" name="temperature" min="0.2" max="1.0" step="0.01"
+                            value="0.8"> -->
 
                         <input type="submit" id="submit" value="Transformar">
                     </form>
                 </div>
 
                 <div id="Resumir" class="tabcontent">
-                    <p>Em desenvolvimento...</p>
+                    <p> Insira qualquer texto que queira resumir</p>
+                    <form class="assistant-inputs">
+                        <textarea placeholder="Insira seu texto..." cols="50" rows="6" id="text-summary" ß
+                            name="text-summary"></textarea>
+
+                        Insira um direcionamento
+                        <input disabled placeholder="Temporiariamente desabilitado..." type="text"
+                            name="summary-prompt">
+
+                        <input type="submit" id="submit" value="Resumir">
+                    </form>
                 </div>
 
                 <div id="Enriquecer" class="tabcontent">
-                    <p>Em desenvolvimento...</p>
+                    <p> Insira qualquer texto que queira enriquecer</p>
+                    <form class="assistant-inputs">
+                        <textarea placeholder="Insira seu texto..." cols="50" rows="6" id="text-enrich"
+                            name="text-enrich"></textarea>
+
+                        Insira um direcionamento
+                        <input disabled placeholder="Temporiariamente desabilitado..." type="text" name="enrich-prompt">
+
+                        <input type="submit" id="submit" value="Enriquecer">
+                    </form>
                 </div>
 
                 <i id="loading" class="fa-solid fa-spinner"></i>

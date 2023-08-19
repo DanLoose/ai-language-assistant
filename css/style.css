@@ -44,7 +44,8 @@ body{
     width: 320px;
   }
   .main textarea,
-  .main select {
+  .main select,
+  .main input {
     padding: 12px 16px;
     border: 1px solid #10a37f;
     border-radius: 4px;
