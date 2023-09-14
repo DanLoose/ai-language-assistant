@@ -21,7 +21,7 @@ inputSubmit.addEventListener("click", async (e) => {
 
 async function askAi(texto, lingua, tom) {
 
-    const apiKey = "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";
+    const apiKey = "sk-*****************************";
     const messages = generatePrompt(texto, lingua, tom);
 
     iniciaCarregamento();
